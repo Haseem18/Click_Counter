@@ -1,0 +1,72 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+.para {
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counterBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.decrementBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+.resetBtn {
+  background-color: #2196f3;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.actionText {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+li {
+  max-width: 400px;
+  width: 90%;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+li span {
+  color: #777;
+  font-size: 0.9rem;
+}
