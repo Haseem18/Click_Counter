@@ -16,17 +16,18 @@ const ul = document.querySelector("ul");
 
 let count = 0;
 const clickBtn = [];
-
-const date = new Date();
+const timeHistory = [];
 
 function renderHistory() {
+  const date = new Date();
   ul.innerHTML = "";
-  clickBtn.forEach((val) => {
+  clickBtn.forEach((val, index) => {
     const li = document.createElement('li')
     const span = document.createElement('span');
     
     li.innerHTML = val;
-    span.innerHTML = ` @ ${new Date().toLocaleTimeString()}`;
+    timeHistory.push(date.toLocaleTimeString());
+    span.innerHTML = ` @ ${timeHistory[index]}`;
     li.append(span);
     ul.append(li);
   })
